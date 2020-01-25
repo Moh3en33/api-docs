@@ -2,13 +2,13 @@
 
 **Base Endpoint URL**
 
-**`https://api.wcex.com/trading`**
+**`https://api.trade8.to/trading`**
 
 ## Authenticated Endpoints
 
 ### Place a New Order
 
-**`https://api.wcex.com/trading/trade/new`**
+**`https://api.trade8.to/trading/trade/new`**
 
 #### Request (POST)
 
@@ -55,7 +55,7 @@ A trade accepted by the engine will be assigned a trade `id` which will appear i
 
 ### Cancel Order
 
-**`https://api.wcex.com/trading/trade/cancel`**
+**`https://api.trade8.to/trading/trade/cancel`**
 
 #### Request (POST)
 
@@ -79,7 +79,7 @@ If an order could not be cancelled \(if it has been already filled, does not exi
 
 ### Update Order
 
-**`https://api.wcex.com/trading/trade/update`**
+**`https://api.trade8.to/trading/trade/update`**
 
 Updates an order or position.
 
@@ -125,7 +125,7 @@ For demo trading, add `?demo=true` to your request.
 
 ### Close Position
 
-**`https://api.wcex.com/trading/trade/close`**
+**`https://api.trade8.to/trading/trade/close`**
 
 Closes a position at market price. Sells close at the ask, buys at the bid.
 
@@ -166,7 +166,7 @@ For demo trading, add `?demo=true` to your request.
 
 ### Split Position
 
-**`https://api.wcex.com/trading/trade/split`**
+**`https://api.trade8.to/trading/trade/split`**
 
 Splits a position into two positions that can be managed separately.
 
@@ -194,7 +194,7 @@ For demo trading, add `?demo=true` to your request.
 
 ### Get Orders
 
-**`https://api.wcex.com/trading/orders`**
+**`https://api.trade8.to/trading/orders`**
 
 Lists your pending orders, sorted by submission time (most recent first).
 
@@ -242,7 +242,7 @@ An array of your pending orders.
 
 ### Get Positions
 
-**`https://api.wcex.com/trading/positions`**
+**`https://api.trade8.to/trading/positions`**
 
 Lists your open positions, sorted by opening time.
 
@@ -279,7 +279,7 @@ For demo trading, add `?demo=true` to your request.
 
 ### Get History
 
-**`https://api.wcex.com/trading/history/:product?`**
+**`https://api.trade8.to/trading/history/:product?`**
 
 List your recent trades (closed positions), ordered by close time.
 
@@ -334,7 +334,7 @@ An array of your recent trades.
 
 ### Get Balances
 
-**`https://api.wcex.com/trading/balances/:asset?`**
+**`https://api.trade8.to/trading/balances/:asset?`**
 
 Lists your balances.
 
@@ -358,7 +358,7 @@ For demo trading, add `?demo=true` to your request.
 
 ### Get Transactions
 
-**`https://api.wcex.com/trading/transactions/:type`**
+**`https://api.trade8.to/trading/transactions/:type`**
 
 Lists your deposits and withdrawals, sorted by most recent first.
 
@@ -396,7 +396,7 @@ E.g. `/transactions?asset=BTC&limit=50&timestamp=1511481127561`
 
 ### Get Deposit Address
 
-**`https://api.wcex.com/trading/deposit/:asset`**
+**`https://api.trade8.to/trading/deposit/:asset`**
 
 Returns a deposit address for the provided asset.
 
@@ -420,7 +420,7 @@ Returns a deposit address for the provided asset.
 
 ### Get Products
 
-**`https://api.wcex.com/trading/products/:product?`**
+**`https://api.trade8.to/trading/products/:product?`**
 
 Lists products available to trade.
 
@@ -451,7 +451,7 @@ Lists products available to trade.
 
 ### Get Quotes
 
-**`https://api.wcex.com/trading/quotes/:product(s)`**
+**`https://api.trade8.to/trading/quotes/:product(s)`**
 
 Returns quotes for the provided product(s).
 
@@ -485,7 +485,7 @@ Polling this endpoint is discouraged in favor of subscribing to WebSocket events
 
 ### Get Candles
 
-**`https://api.wcex.com/trading/candles/:product/:resolution`**
+**`https://api.trade8.to/trading/candles/:product/:resolution`**
 
 Lists historical candles for a product. Candles returned are grouped by `resolution`.
 

@@ -2,7 +2,7 @@
 
 ## Getting your API Key
 
-You can generate an API key and secret from your [Account Settings](https://wcex.com/settings). Use them to sign requests to authenticated endpoints.
+You can generate an API key and secret from your [Account Settings](https://trade8.to/settings). Use them to sign requests to authenticated endpoints.
 
 ## Signing a Request
 
@@ -56,7 +56,7 @@ const WCX_SIG = hmac.update(message_to_sign).digest('base64');
 
 request({
 	method: METHOD,
-	url: "https://api.wcex.com/trading/trade/new",
+	url: "https://api.trade8.to/trading/trade/new",
 	json: body_json,
 	headers: {
 		"WCX-APIKEY": "de53e16e-...",

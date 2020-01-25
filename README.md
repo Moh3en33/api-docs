@@ -2,7 +2,7 @@
 
 ## Introduction
 
-WCX offers REST and WebSocket APIs. This documentation outlines the API's functionality.
+Trade8 offers REST and WebSocket APIs. This documentation outlines the API's functionality.
 
 You can use the API to programmatically place new orders, check your balance, or stream real-time price updates, among other things.
 
@@ -12,7 +12,6 @@ All request and response bodies are encoded in JSON (`application/json`). All re
 
 * [Authentication](authentication.md)
 * [Trading](trading.md)
-* [XT Exchange](exchange.md)
 * [WebSocket](subscribe.md)
 
 ## Data Types
@@ -27,7 +26,7 @@ Numbers returned by the API, particularly decimals, will be returned as strings.
 
 ## Rate Limits
 
-WCX rate limits its API to prevent abuse that would degrade the exchange's ability to maintain top-notch performance for all traders.
+Trade8 rate limits its API to prevent abuse that would degrade the exchange's ability to maintain top-notch performance for all traders.
 
 By default, all endpoints are limited to 5 requests per second per IP. Requests that exceed this limit will receive a Rate Limit Exceeded error with status code `429`.
 
@@ -53,15 +52,15 @@ If the request is successful, a `200` \(OK\) status code is returned, along with
 
 #### **REST Endpoint URL**
 
-**`https://api.wcex.com`**
+**`https://api.trade8.to`**
 
 #### WebSocket Endpoint URL
 
-**`wss://data.wcex.com`**
+**`wss://data.trade8.to`**
 
 ### Get Server Time
 
-**`https://api.wcex.com/time`**
+**`https://api.trade8.to/time`**
 
 Returns the server time.
 

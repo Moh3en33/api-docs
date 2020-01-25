@@ -2,7 +2,7 @@
 
 **Endpoint URL**
 
-**`wss://data.wcex.com`**
+**`wss://data.trade8.to`**
 
 ## Subscribe
 
@@ -72,7 +72,7 @@ Authentication is similar to REST request signing and authentication. Pass in an
 
 **`heartbeat`**
 
-WCX will send a `heartbeat` event every five seconds so you'll know your WebSocket connection is active. Hearbeats also include sequence numbers which you can use to check that no messages were missed.
+Trade8 will send a `heartbeat` event every five seconds so you'll know your WebSocket connection is active. Hearbeats also include sequence numbers which you can use to check that no messages were missed.
 
 If you miss one or more heartbeats, or your sequence numbers contain gaps, your connection may be unreliable. We recommend that you disconnect and reconnect.
 
@@ -320,7 +320,7 @@ A `balance` event is sent whenever one or more of your balances changes.
 
 ## XT Exchange
 
-**Important Note: the channels below cover our [XT Exchange](https://exchange.wcex.com), not our main trading platform. If you're looking for those, please see the Trading section above.**
+**Important Note: the channels below cover our [XT Exchange](https://exchange.trade8.to), not our main trading platform. If you're looking for those, please see the Trading section above.**
 
 ### Public
 
